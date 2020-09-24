@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Paint Me</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script>
+            let welcomeBg = ['blueviolet','burlywood','cadetblue','chocolate'];
+            let welcomeBgloop = 0;
+
+            var welcomeContainer = document.createElement('div');
+            welcomeContainer.setAttribute('class', 'welcomecontainer')
+            var titleCard = document.createElement('h1')
+            titleCard.innerHTML="PAINT ME RIGHT";
+            welcomeContainer.append(titleCard);
+            document.body.append(welcomeContainer);
+
+            setInterval(colorflash,1000);
+
+            function colorflash(){
+                document.body.style.backgroundColor=welcomeBg[welcomeBgloop++];
+                if(welcomeBgloop == welcomeBg.length)
+                    welcomeBgloop = 0;
+            }
+
+
+
+
+
+        </script>
+    </body>
+</html>

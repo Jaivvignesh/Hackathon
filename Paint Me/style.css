@@ -1,0 +1,9 @@
+.welcomecontainer{
+    border: 1px solid black;
+    padding:10px 10px;
+    width:100%;
+    margin:auto;
+    font-size: 25px;
+    text-align: center;
+    font-family:"'Lucida Sans Unicode', 'Lucida Grande', sans-seri";
+}
